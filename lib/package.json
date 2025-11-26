@@ -1,5 +1,5 @@
 {
-  "name": "@code-hike/lighter",
+  "name": "@jacob-roberts/lighter",
   "type": "module",
   "version": "1.0.3",
   "description": "Code Hike's syntax highlighter",
