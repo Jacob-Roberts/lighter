@@ -8,22 +8,22 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
-permissions:
-  id-token: write # Required for OIDC
-  contents: write # To push changes back to the repository
-
 jobs:
   release:
     name: Release
+    if: ${{ github.repository_owner == 'Jacob-Roberts' }}
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write # Required for OIDC
+      contents: write # To push changes back to the repository
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v5
 
-      - name: Setup Node.js 18.x
+      - name: Setup Node.js 24.x
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 24.x
           registry-url: "https://registry.npmjs.org"
 
       - name: Install Dependencies
