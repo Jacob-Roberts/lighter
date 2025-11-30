@@ -1,5 +1,11 @@
 # @code-hike/lighter
 
+## 1.0.4
+
+### Patch Changes
+
+- bc9f77c: Add README and trusted publishing
+
 ## 1.0.3
 
 ### Patch Changes
