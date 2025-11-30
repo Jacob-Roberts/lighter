@@ -49,7 +49,7 @@
     "typecheck": "vitest typecheck",
     "regenerate": "node ./utils/update.mjs"
   },
-  "repository": "https://github.com/code-hike/lighter",
+  "repository": "https://github.com/Jacob-Roberts/lighter",
   "homepage": "https://codehike.org",
   "funding": "https://github.com/sponsors/code-hike",
   "dependencies": {
